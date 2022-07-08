@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sistema :: Layout com video sem redirect </title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" type='text/css' href="css/style-index.css" media="all" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+</head>
+<body>
+  <div id="top-blackband" style="text-align:center; font-size:1em; background-color: black; color: white; width: 100%; height: auto; padding:5px 15px; margin: 0; position:relative; top: 0; left: 0;">
+    Há <span id="top-people" style="font-weight: bold"></span>
+    pessoas em
+    <span id="top-city" style="font-weight: bold"></span>
+    assistindo esse vídeo agora
+  </div>
+  <a href="#"> <!-- no # insira o link de achar necessário como por ex: link do site de pagamento: https://app.monetizze.com.br/checkout/seuID -->
+  <img class="maxw100" id="float-btn" src="img/caf.png" style="display: none;width:calc(100% - 10px); max-width: 450px; height:auto; left: 50%; transform: translate(-50%, 0); position:fixed; bottom:5px; z-index:9999"></a>
+  <div class="teaser nomargin" style="padding-bottom: 20px; margin-bottom: 20px; border-bottom:2px solid #CCC;color:#111; background-color:#CCC; background-image: url(img/bg2.jpg);  background-size: cover;  background-repeat: no-repeat; background-position: center center;">
+    <div class="container">
+      <h2 class="text-center">
+        <span style="color:#C00; font-size:1.1em;" id="num-persons">
+        </span> Pessoas Reduzem o Açucar Com Este Regulador de Glucosa Natural... (Que Fica Dentro de seu Corpo!)
+      </h2>
+      <!-- Exibição dos videos -->
+      <div class="video-floater">
+		    <div style="max-width:100%; width:640px; height:auto; padding-top:0; padding-bottom:0; margin:0 auto;margin:0 auto; border: 4px solid #12ad7c;margin-bottom: 0px;position: relative;">
+          <div style="width:640px;height:0;  padding-bottom: 55.85%; padding-top:0;">
+        		<div class="video-overlay">
+        			<div class="coverTap">
+        				<div class="play-button-bg">
+        					<div class="play-button-graphic"></div>
+        				</div>
+        			</div>
+        		</div>
+        		<img src="img/cover.png" class="video-cover">
+        		<div id="player"></div>
+		      </div>
+		    </div>
+		  </div>
+      <!-- FIM Exibição dos videos -->
+      <br>
+      <div class="container" style="text-align:center;">
+        <div class="fb-like" data-href="https://chavedadiabetes.com.br/" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="true"></div>
+      </div>
+    </div>
+  </div>
+  <div class="gray teaser nomarginbottom" style="background-color:#F6F6F6 !important">
+    <div class="container" style="background:none;padding: 0px;">
+      <div id="lp-addtocart" style="display: none;">
+        <center>
+          <a href="https://t.artigobuzz.com/click">
+            <img src="img/ComprarAgora.png" style="width:100%;max-width:500px">
+          </a>
+        </center>
+        <p class="aligncenter nomargin" style="font-size: 22px;">
+          <strong>Preço Normal</strong>: <del>R$197</del>
+        </p>
+        <p class="blue aligncenter" style="font-weight:600;color: #2484b5;font-size: 2.4rem; margin-bottom: 10px">Compre Hoje, Apenas R$127</p>
+        <p style=" text-align: center;">
+          <a class="green button optin" href="https://t.artigobuzz.com/click" style="max-width:600px; display: block; padding: 16px; font-size: 28px; margin: 0 auto 10px; line-height: 44px;">SIM! Quero Chave Da Diabetes »</a>
+        </p>
+        <p>
+          <center>
+            <img alt="" src="img/garantia-1.png" border="0">
+          </center>
+        </p>
+      </div>
+      <!-- Iframe dos nomes ficticios  -->
+      <p><center>
+        <iframe src="clientes.php" style="border: none; width: 100%; max-width: 640px; height: 235px; overflow: hidden;"></iframe>
+      </center></p>
+      <!-- Fim Iframe nomes ficticios -->
+    </div>
+  </div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+
+
+<!-- Para aprimorar futuramente leia este script, ele pega o paramentro passado na url -->
+<!-- <script>
+  function getUrlParameter(name) {
+    name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
+    var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
+    var results = regex.exec(location.search);
+    return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
+  };
+  if(getUrlParameter('bemobdata') == '')
+  {
+    var anchors = document.getElementsByTagName("a");
+
+    src = '&src=direct';
+    if(getUrlParameter('utm_source') != '')
+    {
+      src = '&src='+getUrlParameter('src')+'&utm_source='+getUrlParameter('utm_source')+'&utm_medium='+getUrlParameter('utm_medium')+'&utm_content='+getUrlParameter('utm_content')+'&utm_campaign='+getUrlParameter('utm_campaign');
+    }
+    for (var i = 0; i < anchors.length; i++) {
+        anchors[i].href = "https://app.monetizze.com.br/checkout/PKQ56668?u=c"+src;
+        //anchors[i].href = "https://app.monetizze.com.br/checkout/PKQ56668?src=direct";
+    }
+  }
+</script>
+ -->
+
+<script language="javascript">
+//var exitMessage = '***************************>> ESPERE!\n\n\nClique no bot&atilde;o  [PERMANECER NESTA P&Aacute;GINA] ou n [CANCELAR]... \n\n\n... e veja como eu posso te ajudar a Controlar sua Diabetes HOJE!\n\n***************************************';
+//var exitPage = 'historia.html?u=c'+src;
+var videoID = '7Lol3lumMTo'; // Aqui insira o ID do video do YouTube de sua preferencia, para ilustrar eu adicionei um outro video para lhe mostrar a simplicidade de alterar o video.
+// id do Video da Diabetes = 1Hrg4zUKzqI
+</script>
+<script src="js/scripts.js"></script>
+<!-- Script API Facebook :: item curtir e compartilhar -->
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId            : 'adicione-seu-id-do-appDeveloper', // Aqui Sr. Elton insira sua ID do Facebook Developer caso queria futuramente atribuir
+      autoLogAppEvents : true,
+      xfbml            : true,
+      version          : 'v3.0'
+    });
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "https://connect.facebook.net/pt_BR/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
+
+<!-- FIM :: Script API Facebook :: item curtir e compartilhar -->
+
+  <div id="footer">
+    <p align="center" style="font-size: 10px;">* Os resultados podem variar de pessoa para pessoa</p>
+    <p align="center">
+      <a href="https://app.monetizze.com.br/checkout/PKQ56668">Comprar Agora</a> /
+      <a href="http://midiabrasileira.com.br/termos" target="_blank">Termos de Uso</a> /
+      <a href="http://midiabrasileira.com.br/termo-responsabilidade" target="_blank">Termo de Responsabilidade</a> /
+      <a href="http://midiabrasileira.com.br/privacidade" target="_blank">Política de Privacidade</a> /
+      <a href="http://midiabrasileira.com.br/contato" target="_blank">Contato</a>
+    </p>
+    <p style="padding-top:25px"align="center">Copyright 2019 - Todos os Direitos Reservados</p>
+  </div>
+
+</body>
+</html>
